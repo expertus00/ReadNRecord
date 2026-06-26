@@ -1,19 +1,16 @@
 // =====================================================
-// Firebase 설정 파일
-// Firebase 콘솔(https://console.firebase.google.com)에서
-// 프로젝트 설정 > 일반 > 내 앱 > SDK 설정 및 구성에서
-// 아래 값을 복사하여 교체하세요.
+// Firebase 설정 파일 — readnrecord-54606
 // =====================================================
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCRqPglyfSOj7a8uIpNIq5bTl-Ysd4TVPI",
+  authDomain: "readnrecord-54606.firebaseapp.com",
+  projectId: "readnrecord-54606",
+  storageBucket: "readnrecord-54606.firebasestorage.app",
+  messagingSenderId: "508329373084",
+  appId: "1:508329373084:web:8454df8fb3b8e773d46c59"
 };
 
 const app = initializeApp(firebaseConfig);
