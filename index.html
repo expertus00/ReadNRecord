@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>글로 남기다</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>글로 남기다</h1>
+      <p class="subtitle">읽는 순간은 지나가지만, 기록은 남습니다.</p>
+    </header>
+
+    <section class="form-card">
+      <h2>감상문 등록</h2>
+      <form id="reflectionForm">
+        <label>
+          책 제목
+          <input type="text" id="bookTitle" placeholder="책 제목을 입력하세요" required />
+        </label>
+        <label>
+          저자
+          <input type="text" id="bookAuthor" placeholder="저자를 입력하세요" required />
+        </label>
+        <label>
+          감상 날짜
+          <input type="date" id="reflectionDate" required />
+        </label>
+        <label>
+          평점
+          <select id="bookRating" required>
+            <option value="">선택하기</option>
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★☆</option>
+            <option value="3">★★★☆☆</option>
+            <option value="2">★★☆☆☆</option>
+            <option value="1">★☆☆☆☆</option>
+          </select>
+        </label>
+        <label>
+          감상문
+          <textarea id="reflectionText" rows="6" placeholder="책을 읽고 느낀 점을 적어주세요" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" id="submitButton">저장하기</button>
+          <button type="button" id="cancelEdit" class="secondary hidden">취소</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="list-card">
+      <div class="list-header">
+        <h2>작성된 감상문</h2>
+        <span id="entryCount">0개</span>
+      </div>
+      <label class="search-bar">
+        감상문 검색
+        <input type="search" id="searchInput" placeholder="책 제목, 저자, 감상문에서 검색하세요" />
+      </label>
+      <div id="entryList" class="entry-list">
+        <p class="empty-state">아직 작성된 감상문이 없습니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
